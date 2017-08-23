@@ -1,0 +1,26 @@
+.# Logs
+logs
+*.log
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directory
+node_modules
+
+# dist folder
+dist
+
+# VSCode metadata
+.vscode
+
+# Mac files
+.DS_Store
+
+# eslint cache
+.eslintcache
+
+# webpack
+src/public/js/*
+src/public/css/*
+webpack-assets.json

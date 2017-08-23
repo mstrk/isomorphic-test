@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+const path = require('path')
+
+// globals
+global.__DEV__ = process.env.NODE_ENV !== 'production'
+global.__PROD__ = process.env.NODE_ENV === 'production'
+global.__SERVER__ = true
+global.__CLIENT__ = false
+
+const WebpackIsomorphicTools = require('webpack-isomorphic-tools')
+const isomorphicToolsConfig = require('../isomorphic-tools.config')
+
+const projectBasePath = path.resolve(__dirname, '..')
+
+// this global variable will be used later in express middleware
+global.webpackIsomorphicTools = new WebpackIsomorphicTools(isomorphicToolsConfig)
+  .server(projectBasePath, function () {
+    require('../src/server')
+  })

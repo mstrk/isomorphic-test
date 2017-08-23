@@ -1,0 +1,39 @@
+//|*------------------------------------*|
+//    #DEFAULTS
+//|*------------------------------------*|
+
+// High-level base settings.
+$font-family:           -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", sans-serif;
+$base-font-size:        16px;
+$base-line-height:      24px;
+$base-text-color:       $black-1;
+$base-background-color: $grey-200;
+$base-round:            2px;
+
+// Main colors
+$red:                   $red-500;
+$pink:                  $pink-500;
+$purple:                $purple-500;
+$deep-purple:           $deep-purple-500;
+$indigo:                $indigo-500;
+$blue:                  $blue-500;
+$light-blue:            $light-blue-500;
+$cyan:                  $cyan-500;
+$teal:                  $teal-500;
+$green:                 $green-500;
+$light-green:           $light-green-500;
+$lime:                  $lime-500;
+$yellow:                $yellow-500;
+$amber:                 $amber-500;
+$orange:                $orange-500;
+$deep-orange:           $deep-orange-500;
+$brown:                 $brown-500;
+$grey:                  $grey-500;
+$blue-grey:             $blue-grey-500;
+
+// Primary palette colors and accent colors
+$primary:               $blue-grey-500;
+$accent:                $pink-A200;
+
+// Spacing
+$base-spacing-unit:     8px;

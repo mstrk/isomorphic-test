@@ -1,0 +1,35 @@
+
+.AppBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $primary;
+  color: $white;
+  @include z-depth(4);
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 64px;
+
+    a {
+      text-decoration: none;
+
+      &:visited,
+      &:link { color: $white; }
+    }
+  }
+
+  .left-content,
+  .right-content,
+  .center-content,
+  .title {
+    padding: $base-spacing-unit $base-spacing-unit * 2;
+  }
+
+  .center-content {
+    flex: 2;
+  }
+}
